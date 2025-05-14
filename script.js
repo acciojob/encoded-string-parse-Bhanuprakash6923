@@ -1,11 +1,11 @@
 function parseCode(str) {
-  // Split the string using one or more zeros as the delimiter
-  const parts = str.split(/0+/);
+  // Split the string using one or more zeros as separators
+  const [firstName, lastName, id] = str.split(/0+/);
 
   return {
-    firstName: parts[0],
-    lastName: parts[1],
-    id: parts[2]
+    firstName: firstName,
+    lastName: lastName,
+    id: id
   };
 }
 
